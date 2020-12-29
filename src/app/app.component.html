@@ -1,0 +1,17 @@
+<div class="container align-center">
+  <h2>Book Finder</h2>
+  <div class="form-group">
+  
+    <input type="text" class="form-control btn-sizing"  id="user">
+    <button type="button" class="btn btn-primary " (click)="handlesearch()">search</button>
+  </div>
+  
+  
+   
+      <ol *ngFor="let item of data">
+
+        <li >{{item.volumeInfo.title}} </li>  
+        <li >{{item.volumeInfo.authors}} </li>  
+      </ol>
+ 
+</div>
